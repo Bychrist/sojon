@@ -201,7 +201,7 @@ class R_Repository implements IRepository
                 $filename = time() . '.' . $image->getClientOriginalExtension();
                 $path = 'assets/images/productimages/' . $filename;
                 //  return $path;
-                Image::make($image->getRealPath())->resize(270, 367)->save($path);
+                Image::make($image->getRealPath())->resize(400, 400)->save($path);
                 $product->product_image = 'assets/images/productimages/' . $filename;
 
                 $product->save();

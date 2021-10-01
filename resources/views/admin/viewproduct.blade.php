@@ -37,9 +37,9 @@
                     <div class="card border-left-success shadow h-100 py-2">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
-                                <label for="">Product Detail </span></label>
+                                <label for="">Product Detail </label>
                                 <input type="text" name="product_detail" value="{{old('product_detail')}}"
-                                       class="form-control" required>
+                                       class="form-control" required />
                                 <small class="text-danger"> {!! $errors->first('product_detail') !!}</small>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                                                                     <small class="text-danger"> {!! $errors->first('product_name') !!}</small>
                                                                     <br>
                                                                     <label for="">Product Image <span
-                                                                            style="font-size: 8px">(270 x 367)
+                                                                            style="font-size: 8px">(400 x 400)
                                                                         </span></label>
                                                                     <input type="file" name="product_image"
                                                                            class="form-control"   accept="image/png, image/jpg" >

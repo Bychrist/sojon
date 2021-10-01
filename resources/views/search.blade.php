@@ -44,7 +44,7 @@
                @foreach($resultData as $data)
 
                    @if(class_basename($data) == "BrandProduct")
-                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6" style="margin-bottom: 20px">
+                     <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6" style="margin-bottom: 20px">
                             <div class="single-box">
                                 <div class="part-img">
                                     <img src="{{asset($data->product_image)}}"
@@ -55,12 +55,12 @@
                                         @if(strlen($data->product_detail) < 50)
                                             <div class="title" style="margin-top:-65px">
                                         @else
-                                               <div class="title" style="margin-top:0px;padding-top:20px;">
+                                               <div class="title" style="margin-top:-22px;">
                                             @endif
 
-                                            <a href="" style="font-size: 12px;font-weight:
+                                            <a href="" style="font-weight:
                                             bolder">{{$data->product_name}}</a>
-                                            <span>Brand Name here</span>
+                                            <span>{{$data->Brand->brand_name}}</span>
 
                                         </div>
                                         <p style="text-align: justify;font-size: 12px;line-height: 11px;">
@@ -79,10 +79,10 @@
                                 </div>
                             </div>
                       </div>
-                </div>
+
                     @endif
                 @endforeach
-
+                 </div>
             </div>
             @endif
 
@@ -109,21 +109,22 @@
 
                                 @if(class_basename($dat) == "Brand")
                                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                        <a href="{{'brandandproduct'}}/{{$dat->id}}">
+                                                <div class="single-box" >
 
-                                        <div class="single-box" >
+                                                    <div class="part-txt">
+                                                        <img src="{{asset($dat->brand_image)}}" alt="beta">
+                                                        <h3 class="brandtitle">{{$dat->brand_name}}</h3>
+                                                        <p class="brandP">
+                                                            {{substr($dat->brand_detail,0,82)}}
+                                                            @if(strlen($dat->brand_detail) > 82)
+                                                                ...
+                                                            @endif
+                                                        </p>
+                                                    </div>
 
-                                            <div class="part-txt">
-                                                <img src="{{asset($dat->brand_image)}}" alt="beta">
-                                                <h3 class="brandtitle">{{$dat->brand_name}}</h3>
-                                                <p class="brandP">
-                                                    {{substr($dat->brand_detail,0,82)}}
-                                                    @if(strlen($dat->brand_detail) > 82)
-                                                        ...
-                                                    @endif
-                                                </p>
-                                            </div>
-
-                                        </div>
+                                                </div>
+                                            </a>
 
                                     </div>
                                 @endif
@@ -141,7 +142,7 @@
     <div class="row" style="margin-top:-120px">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-            <center><span>{!! $resultData->links() !!}</span>
+            <center><span>{!! $resultData->links() !!}</span></center>
         </div>
         <div class="col-lg-4"></div>
     </div>

@@ -46,7 +46,7 @@
                                         @if(strlen($product->product_detail) < 50)
                                              <div class="title" style="margin-top:-65px">
                                           @else
-                                    <div class="title" style="margin-top:0px;padding-top:20px;">
+                                    <div class="title" style="margin-top:-20px;">
                                      @endif
 
                                         <a href="" style="font-weight:

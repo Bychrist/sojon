@@ -3,7 +3,7 @@
 
         <div class="txt">
             <h3>Engr. James  Nwachukwu</h3>
-            <span>Chairnan & founder</span>
+            <span>Chairman & founder</span>
         </div>
     </div>
     <div class="devider"></div>

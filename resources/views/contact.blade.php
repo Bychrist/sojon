@@ -95,10 +95,12 @@
                     </form>
                 </div>
                 <div class="col-xl-6 col-lg-6 pt-lg-5 pt-md-5" >
-                    <div class="part-img">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3669189261045!2d3.3399202140939597!3d6.475123525521912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bfc463f71df%3A0x89890685ba4ddbc6!2s5%20Adekunle%20Deen%20St%2C%20Amukoko%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1633098133479!5m2!1sen!2sng" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    {{-- <div class="part-img">
                         <img src="assets/images/service-img-1.png"
                              alt="image">
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

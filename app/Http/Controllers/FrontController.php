@@ -37,6 +37,7 @@ class FrontController extends Controller
 
     public function Product()
     {
+
         try
         {
 
@@ -148,7 +149,7 @@ class FrontController extends Controller
     public function Brands()
     {
         $brands = $this->_repository->GetAllBrands();
-        return View('brands',compact('brands'));
+        return view('brands',compact('brands'));
     }
 
     public function BrandAndProduct($brandid)
@@ -194,7 +195,7 @@ class FrontController extends Controller
               if($explodeSuccessMessage[0] == "200")
               {
 
-                  return View('search', compact('resultData'));
+                  return view('search', compact('resultData'));
               }
               else{
                   return back()->with(["failure"=> $resp["success"]]);
