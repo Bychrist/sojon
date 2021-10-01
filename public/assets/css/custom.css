@@ -1,0 +1,97 @@
+
+
+
+.searchcontact{
+
+    margin-top: -200px;
+}
+
+
+.header .top-header {
+    background: #7f0202;
+}
+
+.about .image-box .fun-fact-inner{
+    background: #7f0202;
+    color:#fff;
+}
+.social{
+    background: #fff;
+    padding-top:7px;
+    padding-left:5px;
+    padding-right:5px;
+    border-radius: 5px;
+}
+
+.brandP{
+   text-align: justify;
+    font-size:14px;
+    color:#4b4b46
+}
+.brandtitle{
+    font-size: 9px !important;
+    text-align: center;
+
+
+}
+.def-btn-2{
+    background: #7f0202 !important;
+    border:solid #7f0202 2px !important;
+}
+.def-btn-2:hover{
+    background: #fa5f5f !important;
+    border:solid #7f0202 2px !important;
+}
+
+.single-imgg{
+    height:195px;
+    padding:75px 0;
+    border-left:.5px solid rgba(62,55,104,.7);
+    border-right:.5px solid rgba(62,55,104,.7)
+}
+
+    .project:after{
+        background:#fff;
+
+    }
+
+    /*.single-box:hover{*/
+    /*    border:2px solid #7f0202;*/
+    /*}*/
+
+
+
+.single-boxx:hover{
+    -webkit-animation:shake 10s ease 0s 1 normal;
+    -moz-animation:shake 10s ease 0s 1 normal;
+    -ms-animation:shake 10s ease 0s 1 normal;
+    animation:shake 10s ease 0s 1 normal;
+}
+
+@-webkit-keyframes shake {
+    0%{ transform: rotate(-15deg); -webkit-transform: rotate(-15deg); }
+    2%{ transform: rotate(15deg); -webkit-transform: rotate(15deg); }
+    4%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+    6%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+    8%{ transform: rotate(-22deg); -webkit-transform: rotate(-22deg); }
+    10%{ transform: rotate(22deg); -webkit-transform: rotate(22deg); }
+    12%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+    14%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+    16%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+    18%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+    20%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); }
+}
+
+@keyframes shake {
+    0%{ transform: rotate(-15deg); -ms-transform: rotate(-15deg); }
+    2%{ transform: rotate(15deg); -ms-transform: rotate(15deg); }
+    4%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+    6%{ transform: rotate(18deg); -ms-transform: rotate(18deg); }
+    8%{ transform: rotate(-22deg); -ms-transform: rotate(-22deg); }
+    10%{ transform: rotate(22deg); -ms-transform: rotate(22deg); }
+    12%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+    14%{ transform: rotate(18deg); -ms-transform: rotate(-18deg); }
+    16%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+    18%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+    20%{ transform: rotate(0deg); -ms-transform: rotate(0deg); }
+}
